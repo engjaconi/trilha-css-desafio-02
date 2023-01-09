@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - Inline Flex</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+
+        #flex {
+            display: flex;
+        }
+
+        #inline-flex {
+            display: inline-flex;
+        }
+
+        #div1 {
+            background-color: lightcoral;
+        }
+        #div1 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex - Ocupa a linha toda.</h2>
+    <div id="flex">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+    <span>Span</span>
+
+    <h2>inlineFlex - não ocupa toda a linha.</h2>
+    <div id="inline-flex">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+    <span>Span</span>
+</body>
+</html>

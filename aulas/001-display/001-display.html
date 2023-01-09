@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div {
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+        #block {
+            display: block;
+        }
+        #inline{
+            display: inline;
+        }
+        #inline-block {
+            display: inline-block;
+        }
+        span {
+            font-size: xx-large;
+            color: red;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valores para a propriedade <code>display</code></h1>
+
+    <h2><code>display: block</code></h2>
+    <div id="block">Esta div ocupa toda uma linha.</div>
+
+    <h2><code>display: inline</code></h2>
+    <p>Não aceita width e height.</p>
+    <div id="inline">Esta div ocupa apenas parte da linha.</div>
+    <div id="inline">Esta segunda div ocupa apenas parte da linha.</div>
+
+    <h2><code>display: inline-block</code></h2>
+    <p>Aceita width e height.</p>
+    <div id="inline-block">Esta div ocupa apenas parte da linha.</div>
+    <div id="inline-block">Esta segunda div ocupa apenas parte da linha.</div>
+
+    <h2><code>display: none</code></h2>
+    <p>Esconde o elemento, não é renderizado no html, mas fica presente no DOM.</p>
+
+    <h2><code>visibility: hidden</code></h2>
+    <p>Mantém o espaço do elemento na tela, mas fica invisível.</p>
+
+    <h2>Alinhamento de elementos <code>vertical-align: middle</code></h2>
+    <p><span>S</span>empre com você<span>!</span>
+</body>
+</html>
